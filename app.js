@@ -27,6 +27,8 @@ app.get('/',(req,res)=>{
 app.listen(3000, ()=>{
     console.log('server started');
 });
+//to solve the timeout problem you can enter the following code after the page variable
+//    await page.setDefaultNavigationTimeout(0);
 // $=querySelector/ $$= querySelectorAll
 // const attr = await page.evaluate(el => el.getAttribute("href"), styleNumber);
 // let mathrukawa= await page.evaluate(el=> el.textContent, title);
