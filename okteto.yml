@@ -1,0 +1,13 @@
+name: news
+image: node:14  # Specify the Docker image for your runtime environment
+
+command: node app.js  # Specify the command to run when starting the container
+
+forward:
+  - 3000:3000  # Forward the local port 3000 to the container port 3000 (adjust as needed)
+
+volumes:
+  - .:/app  # Mount your local code directory into the container
+
+environment:
+  - NODE_ENV=development  # Set environment variables as needed
